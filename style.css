@@ -1,0 +1,289 @@
+/* html 초기화 코드 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin: auto;
+}
+/* ---------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Pretendard';
+    padding: 0px;
+    background: url(./img/mybg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+.clear {
+    clear: both;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.container .header {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;
+    top: 0; */
+}
+.container .header h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Pretendard';
+}
+.container .nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+.container .nav ul li a {
+    text-decoration: none;
+    color: #0D2854;
+}
+.container .nav ul li a:hover {
+    color: #755bde;
+}
+#box {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+#main {
+    color: #0D2854;
+    text-align: left;
+    z-index: 1;
+}
+/* .txt {
+    font-family: "Times New Roman";
+    font-size: 100px;
+} */
+.font_light {
+    font-family: "Pretendard Light";
+    line-height: 150%;
+    font-size: 16px;
+}
+/* ----------------올라오는 제목--------------- */
+::-moz-selection {
+    background: rgba(170, 170, 170, 0.3);
+}
+::selection {
+    background: rgba(170, 170, 170, 0.3);
+}
+.heading {
+    margin: 400px 0 0 200px;
+    font-family: "Times New Roman";
+    font-size: 100px;
+    color: #0D2854;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.heading>div {
+    overflow: hidden;
+}
+.heading>div>p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    white-space: nowrap;
+    margin: 0;
+    line-height: 117%;
+}
+div.heading>div {
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+}
+div.heading>div:nth-child(2)>p {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+}
+div.heading>div {
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+}
+div.heading>div:nth-child(3)>p {
+    -webkit-animation-delay: 0.075s;
+    animation-delay: 0.075s;
+}
+.slide-up {
+    -webkit-animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+    animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+@-webkit-keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* ------------------------ */
+.link ul li {
+    display: inline-block;
+    /*writing-mode: tb-rl;*/
+    margin: 0 10px;
+}
+.link ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.link ul li a:hover {
+    color: #EEFF00;
+}
+a {
+    text-decoration: none;
+    color: #667DC8;;
+}
+#title {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+#contents {
+    margin: 0 auto;
+}
+#main_contents h3 {
+    font-size: 22px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px #d0caea
+}
+#sub_menu {
+    width: 800px;
+    /*display: flex;*/
+    text-align: center;
+    margin-top: 25px 0 0 10px;
+    color: #0D2854;
+}
+#sub_menu h2 {
+    font-size: 19px;
+    text-align: center;
+    color: #0D2854;
+    padding: 10px;
+    background-color: none;
+
+}
+#sub_menu li {
+    padding: 20px;
+    line-height: 32px;
+}
+button {
+    background: none;
+    border: 2px solid #667DC8;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 20px;
+    margin: 0px 10px 25px 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+button:hover {
+    background-color: #ffffff;
+}
+#subp {
+    text-decoration: none;
+    color: #667DC8;
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+#subp h3 {
+    font-size: 25px;
+    line-height: 150%;
+}
+p {
+    color: #0D2854;
+}
+/* footer */
+.add {
+    clear: both;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #0D2854;
+    font-family: "Pretendard Light";
+}
+.add a {
+    text-decoration: none;
+    color: #0D2854;
+}
+.add a:hover {
+    text-decoration: none;
+    color: #305da5;
+}
+/* -----------스크롤 탑-------------- */
+#scrollTop:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.292);
+    border: solid 1px #ffffff;
+}
+#scrollTop {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.035);
+    border: solid 1px #0D2854;
+    text-align: center;
+    color: #0D2854;
+    line-height: 23px;
+    position: fixed;
+    right: 200px;
+    bottom: 80px;
+    cursor: pointer;
+}
